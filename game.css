@@ -1,0 +1,48 @@
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(25, 30px); /* 25 columns */
+    grid-template-rows: repeat(20, 30px);    /* 20 rows */
+    gap: 1px;
+    margin: 20px auto;
+    width: fit-content;
+    border: 1px solid black;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.cell.X {
+    color: red;
+}
+
+.cell.O {
+    color: blue;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+#message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#reset-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
